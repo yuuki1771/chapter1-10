@@ -12,6 +12,7 @@ header {
 main {
   width: 960px;
   margin: 50px auto;
+  display: flex;
 }
 
 .step-box {
@@ -68,28 +69,41 @@ footer {
 @media screen and (max-width: 425px) {
   header {
     width: 100%;
+    height: 50px;
   }
 
   main {
     width: 100%;
     margin: 50px auto;
-    display: inline-block;
+    display: block;
   }
 
   .step-box {
     width: 90%;
-    margin: 20px 20px 20px 20px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+  }
+
+  .step-box:last-child {
+    margin-right: auto;
   }
 
   .step-img1 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
   }
 
-  .step-img1 {
+  .step-img2 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
   }
 
   .step-img3 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
   }
 }
