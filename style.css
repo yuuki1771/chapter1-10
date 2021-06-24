@@ -66,31 +66,53 @@ footer {
   background-color: #aaa;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   header {
     width: 100%;
+    height: 50px;
   }
 
   main {
     width: 100%;
-    margin: 50px auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
   }
 
   .step-box {
     width: 90%;
-    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .step-box:last-child {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .step-img1 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
   }
 
-  .step-img1 {
+  .step-img2 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
   }
 
   .step-img3 {
     height: 150px;
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  footer {
+    height: 50px;
   }
 }
